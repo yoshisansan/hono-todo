@@ -14,6 +14,11 @@ npm run start
 wrangler kv:namespace create "HONO_TODO" --preview
 ```
 
+### 本番用 KV の作成（必要な場合）
+```
+wrangler kv:namespace create "HONO_TODO"
+```
+
 ### wrangler.tomlのファイル作成と記述
 
 ```wrangler.toml
@@ -26,12 +31,6 @@ kv_namespaces = [
 ]
 
 ```
-
-### 本番用 KV の作成
-```
-wrangler kv:namespace create "HONO_TODO"
-```
-curl -d client_id=[YOUR CLIENT ID] -d client_secret=[YOUR CLIENT SECRET] -d refresh_token=[YOUR REFRESH TOKEN] -d grant_type=refresh_token https://accounts.google.com/o/oauth2/token
 
 ### Test実行
 ```
