@@ -31,5 +31,6 @@ yarn-error.log*
 .env.production.local
 .env
 
-# others
+# cloudflare
 wrangler.toml
+/.wrangler
