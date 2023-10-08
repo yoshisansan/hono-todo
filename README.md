@@ -14,7 +14,7 @@ npm run start
 wrangler kv:namespace create "HONO_TODO" --preview
 ```
 
-### wrangler.tomlへ記述
+### wrangler.tomlのファイル作成と記述
 
 ```wrangler.toml
 name = "hono-todo-app"
